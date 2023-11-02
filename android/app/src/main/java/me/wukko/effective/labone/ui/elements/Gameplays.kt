@@ -82,17 +82,3 @@ fun GameplayRowPreview() {
         context = LocalContext.current
     )
 }
-
-@Preview(
-    heightDp = 140,
-    widthDp = 240
-)
-@Composable
-fun GameplayItemPreview() {
-    val testItem = parseScreenInfo(fakeJSONData).gameplays.first()
-    GameplayItem(
-        banner = testItem.banner,
-        url = testItem.video,
-        context = LocalContext.current
-    )
-}
