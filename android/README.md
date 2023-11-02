@@ -1,11 +1,11 @@
 # Effective Android Lab
 Game app screen built with Jetpack Compose.  
 
-![drawing](/screenshots/android/main.png)
+![Two screenshots of UI without scroll and after scroll](/screenshots/android/main.webp)
 
 <details><summary>More screenshots</summary>  
 
-![drawing](/screenshots/android/more.png)
+![Three screenshots showing the app in various system states](/screenshots/android/more.webp)
 
 </details><br>  
 
