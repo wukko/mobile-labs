@@ -59,13 +59,19 @@ fun GameScreen(
                         text = screenInfo.title,
                         rating = screenInfo.reviews.rateCount
                     )
-                    TagsRow(screenInfo.tags)
+                    TagsRow(
+                        tags = screenInfo.tags,
+                        context = LocalContext.current
+                    )
                     Text(
                         text = screenInfo.description,
                         style = Typography.bodyMedium,
                         modifier = Modifier.padding(horizontal = HorizontalPadding)
                     )
-                    GameplayRow(screenInfo.gameplays)
+                    GameplayRow(
+                        gameplays = screenInfo.gameplays,
+                        context = LocalContext.current
+                    )
                     ReviewsBlock(
                         userReviews = screenInfo.reviews.userReviews,
                         rating = screenInfo.reviews.rating,

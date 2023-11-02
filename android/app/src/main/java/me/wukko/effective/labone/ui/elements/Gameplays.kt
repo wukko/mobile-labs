@@ -1,6 +1,10 @@
 package me.wukko.effective.labone.ui.elements
 
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -22,19 +26,30 @@ import me.wukko.effective.labone.ui.screenData.toImageRes
 import me.wukko.effective.labone.ui.theme.HorizontalPadding
 
 @Composable
-fun GameplayItem(painter: Painter) {
+fun GameplayItem(
+    banner: String,
+    url: String,
+    context: Context
+) {
     Image(
-        painter = painter,
+        painter = painterResource(banner.toImageRes()),
         contentDescription = "Gameplay",
         contentScale = ContentScale.FillHeight,
         modifier = Modifier
             .fillMaxSize()
-            .clip(RoundedCornerShape(14.dp)),
+            .clip(RoundedCornerShape(14.dp))
+            .clickable {
+                val urlIntent = Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse(url)
+                )
+                context.startActivity(urlIntent) },
     )
 }
 @Composable
 fun GameplayRow(
-    gameplays: List<GamePlay>
+    gameplays: List<GamePlay>,
+    context: Context
 ) {
     Row(
         modifier = Modifier
@@ -45,7 +60,11 @@ fun GameplayRow(
         horizontalArrangement = Arrangement.spacedBy(HorizontalPadding)
     ) {
         gameplays.forEach { item ->
-            GameplayItem(painterResource(item.banner.toImageRes()))
+            GameplayItem(
+                banner = item.banner,
+                url = item.video,
+                context = context
+            )
         }
     }
 }

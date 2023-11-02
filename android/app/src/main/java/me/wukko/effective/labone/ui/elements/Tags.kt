@@ -1,5 +1,7 @@
 package me.wukko.effective.labone.ui.elements
 
+import android.content.Context
+import android.widget.Toast
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -20,7 +22,8 @@ import me.wukko.effective.labone.ui.theme.MonsterratChipStyle
 
 @Composable
 fun TagsRow(
-    tags: List<String>
+    tags: List<String>,
+    context: Context
 ) {
     Row(
         modifier = Modifier
@@ -30,17 +33,24 @@ fun TagsRow(
         horizontalArrangement = Arrangement.spacedBy(10.dp)
     ) {
         tags.forEach { tag ->
-            TagChip(tag)
+            TagChip(
+                text = tag,
+                context = context
+            )
         }
     }
 }
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TagChip(
-    text: String
+    text: String,
+    context: Context
 ) {
     AssistChip(
-        onClick = {},
+        onClick = {
+            Toast.makeText(context, "\"$text\" chip pressed", Toast.LENGTH_SHORT)
+                .show()
+        },
         shape = RoundedCornerShape(100.dp),
         border = null,
         colors = AssistChipDefaults.assistChipColors(
