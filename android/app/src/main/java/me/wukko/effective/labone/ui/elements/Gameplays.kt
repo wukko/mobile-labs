@@ -17,11 +17,14 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import me.wukko.effective.labone.ui.screenData.GamePlay
+import me.wukko.effective.labone.ui.screenData.fakeJSONData
+import me.wukko.effective.labone.ui.screenData.parseScreenInfo
 import me.wukko.effective.labone.ui.screenData.toImageRes
 import me.wukko.effective.labone.ui.theme.HorizontalPadding
 
@@ -43,9 +46,11 @@ fun GameplayItem(
                     Intent.ACTION_VIEW,
                     Uri.parse(url)
                 )
-                context.startActivity(urlIntent) },
+                context.startActivity(urlIntent)
+            },
     )
 }
+
 @Composable
 fun GameplayRow(
     gameplays: List<GamePlay>,
@@ -67,4 +72,27 @@ fun GameplayRow(
             )
         }
     }
+}
+
+@Preview
+@Composable
+fun GameplayRowPreview() {
+    GameplayRow(
+        gameplays = parseScreenInfo(fakeJSONData).gameplays,
+        context = LocalContext.current
+    )
+}
+
+@Preview(
+    heightDp = 140,
+    widthDp = 240
+)
+@Composable
+fun GameplayItemPreview() {
+    val testItem = parseScreenInfo(fakeJSONData).gameplays.first()
+    GameplayItem(
+        banner = testItem.banner,
+        url = testItem.video,
+        context = LocalContext.current
+    )
 }

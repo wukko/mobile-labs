@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import me.wukko.effective.labone.ui.elements.GameBanner
 import me.wukko.effective.labone.ui.elements.GameplayRow
@@ -23,6 +24,8 @@ import me.wukko.effective.labone.ui.elements.InstallButton
 import me.wukko.effective.labone.ui.elements.ReviewsBlock
 import me.wukko.effective.labone.ui.elements.TagsRow
 import me.wukko.effective.labone.ui.screenData.GameInfo
+import me.wukko.effective.labone.ui.screenData.fakeJSONData
+import me.wukko.effective.labone.ui.screenData.parseScreenInfo
 import me.wukko.effective.labone.ui.theme.AppTheme
 import me.wukko.effective.labone.ui.theme.HorizontalPadding
 import me.wukko.effective.labone.ui.theme.Typography
@@ -35,12 +38,15 @@ fun GameScreen(
     screenInfo: GameInfo
 ) {
     AppTheme {
-        Scaffold (
+        Scaffold(
             containerColor = backgroundTint,
             bottomBar = {
                 Box(
                     modifier = Modifier
-                        .padding(horizontal = HorizontalPadding, vertical = 30.dp)
+                        .padding(
+                            horizontal = HorizontalPadding,
+                            vertical = 30.dp
+                        )
                 ) {
                     InstallButton(LocalContext.current)
                 }
@@ -50,7 +56,7 @@ fun GameScreen(
                 modifier = Modifier.fillMaxSize()
             ) {
                 Column(
-                    verticalArrangement = Arrangement.spacedBy(20.dp),
+                    verticalArrangement = Arrangement.spacedBy(HorizontalPadding),
                     modifier = Modifier.verticalScroll(rememberScrollState())
                 ) {
                     GameBanner(
@@ -82,4 +88,10 @@ fun GameScreen(
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun GameScreenPreview() {
+    GameScreen(parseScreenInfo(fakeJSONData))
 }

@@ -7,6 +7,7 @@ import androidx.core.view.WindowCompat
 import me.wukko.effective.labone.ui.screenData.fakeJSONData
 import me.wukko.effective.labone.ui.screenData.parseScreenInfo
 import me.wukko.effective.labone.ui.screens.GameScreen
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

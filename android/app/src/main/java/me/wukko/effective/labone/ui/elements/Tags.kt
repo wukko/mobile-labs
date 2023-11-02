@@ -15,7 +15,11 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import me.wukko.effective.labone.ui.screenData.fakeJSONData
+import me.wukko.effective.labone.ui.screenData.parseScreenInfo
 import me.wukko.effective.labone.ui.theme.ChipBodyColor
 import me.wukko.effective.labone.ui.theme.HorizontalPadding
 import me.wukko.effective.labone.ui.theme.MonsterratChipStyle
@@ -40,6 +44,7 @@ fun TagsRow(
         }
     }
 }
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TagChip(
@@ -63,4 +68,16 @@ fun TagChip(
             )
         }
     )
+}
+
+@Preview
+@Composable
+fun TagsRowPreview() {
+    TagsRow(tags = parseScreenInfo(fakeJSONData).tags, context = LocalContext.current)
+}
+
+@Preview
+@Composable
+fun TagChipPreview() {
+    TagChip(text = "TEST", context = LocalContext.current)
 }

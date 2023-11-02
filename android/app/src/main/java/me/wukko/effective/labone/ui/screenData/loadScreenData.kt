@@ -6,17 +6,20 @@ data class GamePlay(
     val banner: String,
     val video: String
 )
+
 data class UserReview(
     val profilePic: String,
     val name: String,
     val date: String,
     val text: String
 )
+
 data class ReviewInfo(
     val rating: Double,
     val rateCount: String,
     val userReviews: List<UserReview>
 )
+
 data class GameInfo(
     val title: String,
     val tags: List<String>,
@@ -26,6 +29,7 @@ data class GameInfo(
     val gameplays: List<GamePlay>,
     val reviews: ReviewInfo
 )
+
 fun parseScreenInfo(jsonString: String): GameInfo {
     val jsonObject = JSONObject(jsonString)
 

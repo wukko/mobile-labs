@@ -4,26 +4,32 @@ import androidx.annotation.DrawableRes
 import me.wukko.effective.labone.R
 
 @DrawableRes
-fun String.toImageRes() : Int =
+fun String.toImageRes(): Int =
     when (this) {
         "fakeuser1" -> {
             R.drawable.fakeuser1
         }
+
         "fakeuser2" -> {
             R.drawable.fakeuser2
         }
+
         "banner" -> {
             R.drawable.banner
         }
+
         "gamelogo" -> {
             R.drawable.gamelogo
         }
+
         "gameplay1" -> {
             R.drawable.gameplay1
         }
+
         "gameplay2" -> {
             R.drawable.gameplay2
         }
+
         else -> {
             R.drawable.gamelogo
         }

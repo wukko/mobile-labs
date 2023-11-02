@@ -35,9 +35,7 @@ val HugeRatingStyle = TextStyle(
     fontWeight = FontWeight(700)
 )
 
-
 val Typography = Typography(
-    // M3 doesn't let you set a default font, so I set it for each style every damn time
     titleLarge = TextStyle(
         fontFamily = ModernistFamily,
         fontSize = 20.sp,

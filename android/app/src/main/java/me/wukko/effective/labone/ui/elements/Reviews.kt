@@ -19,9 +19,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import me.wukko.effective.labone.R
 import me.wukko.effective.labone.ui.screenData.UserReview
+import me.wukko.effective.labone.ui.screenData.fakeJSONData
+import me.wukko.effective.labone.ui.screenData.parseScreenInfo
 import me.wukko.effective.labone.ui.screenData.toImageRes
 import me.wukko.effective.labone.ui.theme.HorizontalPadding
 import me.wukko.effective.labone.ui.theme.HugeRatingStyle
@@ -50,6 +53,7 @@ fun ReviewsBlock(
         ReviewsComments(userReviews)
     }
 }
+
 @Composable
 fun ReviewsRating(
     rating: Double,
@@ -83,9 +87,10 @@ fun ReviewsRating(
         }
     }
 }
+
 @Composable
 fun ReviewsComments(userReviews: List<UserReview>) {
-    Column (
+    Column(
         verticalArrangement = Arrangement.spacedBy(25.dp),
         modifier = Modifier.padding(vertical = 10.dp)
     ) {
@@ -102,6 +107,7 @@ fun ReviewsComments(userReviews: List<UserReview>) {
         }
     }
 }
+
 @Composable
 fun ReviewComment(
     profilePic: String,
@@ -119,11 +125,13 @@ fun ReviewComment(
             Image(
                 painter = painterResource(profilePic.toImageRes()),
                 contentDescription = "user pic",
-                modifier = Modifier.size(36.dp).clip(CircleShape)
+                modifier = Modifier
+                    .size(36.dp)
+                    .clip(CircleShape)
             )
             Column(
                 verticalArrangement = Arrangement.spacedBy(7.dp)
-            ){
+            ) {
                 Text(
                     text = name,
                     style = Typography.titleSmall
@@ -139,4 +147,32 @@ fun ReviewComment(
             style = Typography.bodyMedium
         )
     }
+}
+
+@Preview(
+    heightDp = 50
+)
+@Composable
+fun ReviewsRatingPreview() {
+    ReviewsRating(rating = 4.9, rateCount = "12M")
+}
+
+@Preview(
+    showBackground = true,
+    backgroundColor = 0xFF000000
+)
+@Composable
+fun ReviewsCommentsPreview() {
+    ReviewsComments(userReviews = parseScreenInfo(fakeJSONData).reviews.userReviews)
+}
+
+@Preview
+@Composable
+fun ReviewsCommentPreview() {
+    ReviewComment(
+        profilePic = "fakeuser1",
+        name = "John John",
+        date = "February 31, 2034",
+        text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    )
 }
