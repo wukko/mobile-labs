@@ -72,7 +72,7 @@ fun GameBanner(
                     .fillMaxWidth()
                     .height(75.dp)
                     .absoluteOffset(y = 14.dp)
-                    .padding(horizontal = 134.dp),
+                    .padding(start = 134.dp),
                 verticalArrangement = Arrangement.spacedBy(6.dp)
             ) {
                 Text(
