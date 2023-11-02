@@ -14,3 +14,5 @@ val TextColorChip = Color(0xFF44A9F4)
 
 val GameLogoBoxBorder = Color(0xFF1F2430)
 val ChipBodyColor = Color(0x3D44A9F4)
+
+val SeparatorLine = Color(0xFF1A1F29)

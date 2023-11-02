@@ -3,5 +3,5 @@
     <string name="app_name">EffectiveLabOne</string>
     <string name="button_install">Установить</string>
     <string name="reviews_title">Отзывы и рейтинг</string>
-    <string name="dota_description">Dota 2 is a multiplayer online battle arena (MOBA) game which has two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the Ancient, whilst defending their own.</string>
+    <string name="reviews_count">Отзывов</string>
 </resources>
