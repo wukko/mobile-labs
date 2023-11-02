@@ -13,7 +13,7 @@ Game app screen built with Jetpack Compose.
 *(Android 7.0+)*
 
 ## What's in this directory?
-`/android` directory includes full source code for the game preview Android app.
+`/android` directory includes full source code for the "game landing" Android app.
 Clone the repo and open "`android`" folder in Android Studio to check it out.
 
 ## What can this app do?
