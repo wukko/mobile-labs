@@ -153,7 +153,7 @@ fun ReviewComment(
     heightDp = 50
 )
 @Composable
-fun ReviewsRatingPreview() {
+private fun ReviewsRatingPreview() {
     ReviewsRating(rating = 4.9, rateCount = "12M")
 }
 
@@ -162,13 +162,13 @@ fun ReviewsRatingPreview() {
     backgroundColor = 0xFF000000
 )
 @Composable
-fun ReviewsCommentsPreview() {
+private fun ReviewsCommentsPreview() {
     ReviewsComments(userReviews = parseScreenInfo(fakeJSONData).reviews.userReviews)
 }
 
 @Preview
 @Composable
-fun ReviewsCommentPreview() {
+private fun ReviewsCommentPreview() {
     ReviewComment(
         profilePic = "fakeuser1",
         name = "John John",

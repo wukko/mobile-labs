@@ -76,7 +76,7 @@ fun GameplayRow(
 
 @Preview
 @Composable
-fun GameplayRowPreview() {
+private fun GameplayRowPreview() {
     GameplayRow(
         gameplays = parseScreenInfo(fakeJSONData).gameplays,
         context = LocalContext.current

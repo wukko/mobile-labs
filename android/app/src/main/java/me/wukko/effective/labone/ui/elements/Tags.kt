@@ -72,12 +72,12 @@ fun TagChip(
 
 @Preview
 @Composable
-fun TagsRowPreview() {
+private fun TagsRowPreview() {
     TagsRow(tags = parseScreenInfo(fakeJSONData).tags, context = LocalContext.current)
 }
 
 @Preview
 @Composable
-fun TagChipPreview() {
+private fun TagChipPreview() {
     TagChip(text = "TEST", context = LocalContext.current)
 }
