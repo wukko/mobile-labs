@@ -43,6 +43,6 @@ fun InstallButton(context: Context) {
 
 @Preview
 @Composable
-fun InstallButtonPreview() {
+private fun InstallButtonPreview() {
     InstallButton(context = LocalContext.current)
 }

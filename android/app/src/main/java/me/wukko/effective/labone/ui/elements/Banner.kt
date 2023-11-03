@@ -131,7 +131,7 @@ fun LogoBox(
 
 @Preview
 @Composable
-fun GameBannerPreview() {
+private fun GameBannerPreview() {
     GameBanner(
         banner = "banner",
         logo = "gamelogo",
@@ -142,7 +142,7 @@ fun GameBannerPreview() {
 
 @Preview
 @Composable
-fun LogoBoxPreview() {
+private fun LogoBoxPreview() {
     LogoBox(
         logo = "gamelogo"
     )

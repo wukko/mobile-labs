@@ -92,6 +92,6 @@ fun GameScreen(
 
 @Preview
 @Composable
-fun GameScreenPreview() {
+private fun GameScreenPreview() {
     GameScreen(parseScreenInfo(fakeJSONData))
 }
