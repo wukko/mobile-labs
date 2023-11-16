@@ -22,6 +22,7 @@ struct UserHeader: View {
                     size: Sizes.Header.PhotoScale
                 )
             }
+            .buttonStyle(SquishyButton())
         }
         .padding(.bottom, Sizes.Header.BottomSpace)
         .frame(

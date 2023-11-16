@@ -3,6 +3,7 @@ import SwiftUI
 struct ProfilePic: View {
     var icon: String = "DummyUser"
     var size: CGFloat? = Sizes.Default.ProfilePicSize
+    var bgColor: Color? = .white
 
     var body: some View {
         Image(icon)
@@ -14,8 +15,8 @@ struct ProfilePic: View {
                 alignment: .center
             )
             .clipped()
+            .background(bgColor)
             .clipShape(Circle())
-            .accessibilityLabel(LocalizedStringKey("Hello"))
     }
 }
 

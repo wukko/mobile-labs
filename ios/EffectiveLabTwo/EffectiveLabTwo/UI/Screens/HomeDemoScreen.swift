@@ -2,8 +2,8 @@ import SwiftUI
 
 struct HomeDemoScreen: View {
     var body: some View {
-        ScrollView {
-            VStack (
+        ScrollView (.vertical, showsIndicators: false) {
+            LazyVStack (
                 alignment: .leading
             ) {
                 VStack (spacing: Sizes.Page.Spacing) {
@@ -22,6 +22,7 @@ struct HomeDemoScreen: View {
             }
         }
         .background(.white)
+        .scrollBounceBehavior(.basedOnSize)
     }
 }
 

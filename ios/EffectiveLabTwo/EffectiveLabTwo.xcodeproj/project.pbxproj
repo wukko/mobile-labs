@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590C2E0E2B061D1900494DA1 /* NearDoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */; };
+		590C2E102B06293100494DA1 /* NearDoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */; };
+		590C2E122B06293D00494DA1 /* NearDoctorTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */; };
+		590C2E142B06327700494DA1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E132B06327700494DA1 /* Button.swift */; };
 		5917BA4D2B05DAAC00880FAF /* EffectiveLabTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA4C2B05DAAC00880FAF /* EffectiveLabTwoApp.swift */; };
 		5917BA4F2B05DAAC00880FAF /* HomeDemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA4E2B05DAAC00880FAF /* HomeDemoScreen.swift */; };
 		5917BA512B05DAAD00880FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA502B05DAAD00880FAF /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorCard.swift; sourceTree = "<group>"; };
+		590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorInfo.swift; sourceTree = "<group>"; };
+		590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorTimes.swift; sourceTree = "<group>"; };
+		590C2E132B06327700494DA1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		5917BA492B05DAAC00880FAF /* EffectiveLabTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectiveLabTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5917BA4C2B05DAAC00880FAF /* EffectiveLabTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveLabTwoApp.swift; sourceTree = "<group>"; };
 		5917BA4E2B05DAAC00880FAF /* HomeDemoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDemoScreen.swift; sourceTree = "<group>"; };
@@ -71,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590C2E0C2B061CF600494DA1 /* NearDoctors */ = {
+			isa = PBXGroup;
+			children = (
+				590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */,
+				590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */,
+				590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */,
+			);
+			path = NearDoctors;
+			sourceTree = "<group>";
+		};
 		5917BA402B05DAAC00880FAF = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +141,7 @@
 		5917BA5C2B05DAFC00880FAF /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				590C2E0C2B061CF600494DA1 /* NearDoctors */,
 				5917BA832B0601F700880FAF /* ActionRow.swift */,
 				5917BA732B05E92C00880FAF /* DoctorCard.swift */,
 				5917BA5D2B05DAFC00880FAF /* Header.swift */,
@@ -178,6 +197,7 @@
 				5917BA7B2B05EF7600880FAF /* Chip.swift */,
 				5917BA7D2B05F80400880FAF /* ProfilePic.swift */,
 				5917BA7F2B05F94400880FAF /* Icon.swift */,
+				590C2E132B06327700494DA1 /* Button.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -278,14 +298,18 @@
 				5917BA722B05E80400880FAF /* Sizes.swift in Sources */,
 				5917BA6B2B05E01500880FAF /* Fonts.swift in Sources */,
 				5917BA772B05EE2200880FAF /* DoctorInfo.swift in Sources */,
+				590C2E0E2B061D1900494DA1 /* NearDoctorCard.swift in Sources */,
 				5917BA7C2B05EF7600880FAF /* Chip.swift in Sources */,
 				5917BA742B05E92C00880FAF /* DoctorCard.swift in Sources */,
 				5917BA6F2B05E5FD00880FAF /* Colors.swift in Sources */,
 				5917BA802B05F94400880FAF /* Icon.swift in Sources */,
+				590C2E122B06293D00494DA1 /* NearDoctorTimes.swift in Sources */,
 				5917BA7E2B05F80400880FAF /* ProfilePic.swift in Sources */,
 				5917BA792B05EE2C00880FAF /* DoctorTimes.swift in Sources */,
 				5917BA842B0601F700880FAF /* ActionRow.swift in Sources */,
 				5917BA4F2B05DAAC00880FAF /* HomeDemoScreen.swift in Sources */,
+				590C2E142B06327700494DA1 /* Button.swift in Sources */,
+				590C2E102B06293100494DA1 /* NearDoctorInfo.swift in Sources */,
 				5917BA632B05DAFC00880FAF /* Header.swift in Sources */,
 				5917BA4D2B05DAAC00880FAF /* EffectiveLabTwoApp.swift in Sources */,
 				5917BA872B06037700880FAF /* ActionButton.swift in Sources */,

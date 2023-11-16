@@ -10,11 +10,11 @@ struct ActionButton: View {
                 HStack {
                     Icon(
                         icon: icon,
-                        size: Sizes.ActionRow.ItemSize,
+                        size: Sizes.Icons.Big,
                         color: Colors.IconBlue
                     )
                 }
-                .padding(Sizes.ActionRow.ItemSize)
+                .padding(Sizes.Icons.Big)
                 .background(Colors.SubBackground)
                 .clipShape(Circle())
 
@@ -23,6 +23,7 @@ struct ActionButton: View {
                     .foregroundColor(Colors.Gray)
             }
         }
+        .buttonStyle(SquishyButton())
     }
 }
 

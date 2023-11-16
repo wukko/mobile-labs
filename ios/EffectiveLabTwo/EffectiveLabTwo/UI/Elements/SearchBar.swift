@@ -6,18 +6,20 @@ struct SearchBar: View {
             HStack (spacing: Sizes.SearchBar.Spacing) {
                 Icon(
                     icon: "search",
-                    size: 24.0,
+                    size: Sizes.Icons.Big,
                     color: Colors.Gray
                 )
                 Text("SearchPlaceholder")
                     .font(Poppins.Caption)
                     .foregroundColor(Colors.Gray)
+                    .multilineTextAlignment(.leading)
                 Spacer()
             }
             .padding(Sizes.SearchBar.Padding)
             .background(Colors.SubBackground)
             .cornerRadius(Sizes.Base.CornerRadius)
         }
+        .buttonStyle(SquishyButton())
     }
 }
 

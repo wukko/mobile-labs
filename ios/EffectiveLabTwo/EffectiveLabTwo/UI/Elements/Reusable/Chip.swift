@@ -19,6 +19,7 @@ struct Chip: View {
             Text(title)
                 .foregroundColor(color)
                 .font(Poppins.Chip)
+                .multilineTextAlignment(.leading)
         }
     }
 }

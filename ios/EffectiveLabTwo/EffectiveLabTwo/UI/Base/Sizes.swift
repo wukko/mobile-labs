@@ -32,11 +32,13 @@ struct Sizes {
     struct DoctorCard {
         static let PhotoScale = 48.0,
                    Padding = 20.0,
-                   LineSpacing = 4.0
+                   LineSpacing = 4.0,
+                   HSpacing = 14.0,
+                   TimeSpacing = 32.0
 
         struct Line {
-            static let PaddingTop = 8.0,
-                       PaddingBottom = 16.0
+            static let PaddingTop = 6.0,
+                       PaddingBottom = 10.0
         }
     }
 
@@ -47,8 +49,11 @@ struct Sizes {
     
     struct ActionRow {
         static let Spacing = 13.0,
-                   ItemSize = 24.0,
                    VSpacing = 8.0,
                    PaddingTop = 4.0
+    }
+    
+    struct NearDoctors {
+        static let PaddingTop = 12.0
     }
 }

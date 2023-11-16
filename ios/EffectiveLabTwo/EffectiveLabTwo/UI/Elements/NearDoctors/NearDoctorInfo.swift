@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DoctorCardInfo: View {
+struct NearDoctorInfo: View {
     var body: some View {
         HStack (spacing: Sizes.DoctorCard.HSpacing) {
             ProfilePic(
@@ -12,23 +12,32 @@ struct DoctorCardInfo: View {
                 alignment: .leading,
                 spacing: Sizes.DoctorCard.LineSpacing
             ) {
-                Text("Dr. Imran Syahir")
+                Text("Dr. Joseph Brostito")
                     .font(Poppins.ThickTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(Colors.DarkBlue)
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("GeneralDoctor")
+                Text("DentalSpecialist")
                     .font(Poppins.SmallCaption)
-                    .foregroundColor(Colors.BrightGray)
+                    .foregroundColor(Colors.Gray)
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-
-            Icon(
-                icon: "arrow-right",
-                size: Sizes.Icons.Big,
-                color: .white
-            )
+            HStack {
+                Icon(
+                    icon: "location",
+                    size: Sizes.Icons.Small,
+                    color: Colors.Gray
+                )
+                Text("1.2 KM")
+                    .font(Poppins.SmallCaption)
+                    .foregroundColor(Colors.Gray)
+                    .multilineTextAlignment(.leading)
+            }
         }
     }
+}
+
+#Preview {
+    NearDoctorInfo()
 }

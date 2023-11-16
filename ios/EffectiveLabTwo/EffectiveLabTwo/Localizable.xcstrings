@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "1.2 KM" : {
+
+    },
     "Accessibility_ProfilePic" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -87,6 +90,9 @@
       }
     },
     "Dr. Imran Syahir" : {
+
+    },
+    "Dr. Joseph Brostito" : {
 
     },
     "FreeAt" : {

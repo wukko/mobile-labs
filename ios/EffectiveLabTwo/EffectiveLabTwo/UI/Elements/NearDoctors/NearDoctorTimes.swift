@@ -1,15 +1,17 @@
 import SwiftUI
 
-struct DoctorCardTimes: View {
+struct NearDoctorTimes: View {
     var body: some View {
         HStack (spacing: Sizes.DoctorCard.TimeSpacing) {
             Chip(
-                icon: "calendar",
-                title: "Sunday, 12 June"
+                icon: "clock",
+                title: "4,8 (120 Reviews)",
+                color: Colors.Yellow
             )
             Chip(
                 icon: "clock",
-                title: "11:00 - 12:00 AM"
+                title: "Open at 17.00",
+                color: Colors.BrightBlue
             )
         }
         .frame(
@@ -17,4 +19,8 @@ struct DoctorCardTimes: View {
             alignment: .leading
         )
     }
+}
+
+#Preview {
+    NearDoctorTimes()
 }

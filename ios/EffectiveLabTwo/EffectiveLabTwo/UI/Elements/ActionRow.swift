@@ -36,7 +36,6 @@ struct ActionRow: View {
                 Spacer().frame(width: Sizes.Base.Padding)
             }
         }
-        .padding(.top, Sizes.ActionRow.PaddingTop)
     }
 }
 
