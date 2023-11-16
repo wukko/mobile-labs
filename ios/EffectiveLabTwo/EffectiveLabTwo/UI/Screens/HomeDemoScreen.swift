@@ -4,17 +4,23 @@ struct HomeDemoScreen: View {
     var body: some View {
         ScrollView {
             VStack (
-                alignment: .leading,
-                spacing: Sizes.Page.Spacing
+                alignment: .leading
             ) {
-                UserHeader()
-                DoctorCard()
-                SearchBar()
+                VStack (spacing: Sizes.Page.Spacing) {
+                    UserHeader()
+                    DoctorCard()
+                    SearchBar()
+                }
+                .padding(Sizes.Base.Padding)
+
                 ActionRow()
-                NearDoctors()
+
+                VStack (spacing: Sizes.Page.Spacing) {
+                    NearDoctors()
+                }
+                .padding(Sizes.Base.Padding)
             }
         }
-        .padding(Sizes.Base.Padding)
         .background(.white)
     }
 }

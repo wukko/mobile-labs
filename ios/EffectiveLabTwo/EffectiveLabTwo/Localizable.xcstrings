@@ -140,9 +140,6 @@
         }
       }
     },
-    "Hi James" : {
-
-    },
     "Home" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -176,6 +173,9 @@
           }
         }
       }
+    },
+    "James Moore" : {
+
     },
     "Medicine" : {
       "extractionState" : "manual",

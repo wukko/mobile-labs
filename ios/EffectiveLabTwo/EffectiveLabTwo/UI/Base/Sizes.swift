@@ -46,7 +46,7 @@ struct Sizes {
     }
     
     struct ActionRow {
-        static let Spacing = 10.0,
+        static let Spacing = 13.0,
                    ItemSize = 24.0,
                    VSpacing = 8.0,
                    PaddingTop = 4.0

@@ -10,7 +10,7 @@ struct UserHeader: View {
                 Text("Hello")
                     .font(Poppins.BigCaption)
                     .foregroundColor(Colors.Gray)
-                Text("Hi James")
+                Text("James Moore")
                     .font(Poppins.BigTitle)
                     .foregroundColor(Colors.DarkBlue)
             }
