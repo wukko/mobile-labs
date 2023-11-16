@@ -1,15 +1,18 @@
 import SwiftUI
 
 struct DoctorCardTimes: View {
+    let date: String
+    let timeRange: String
+
     var body: some View {
         HStack (spacing: Sizes.DoctorCard.TimeSpacing) {
             Chip(
                 icon: "calendar",
-                title: "Sunday, 12 June"
+                title: date
             )
             Chip(
                 icon: "clock",
-                title: "11:00 - 12:00 AM"
+                title: timeRange
             )
         }
         .frame(
@@ -17,4 +20,11 @@ struct DoctorCardTimes: View {
             alignment: .leading
         )
     }
+}
+
+#Preview {
+    DoctorCardTimes(
+        date: "Friday, 12 July",
+        timeRange: "11:40 - 12:30 PM"
+    )
 }

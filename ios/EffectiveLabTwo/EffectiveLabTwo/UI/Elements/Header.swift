@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct UserHeader: View {
+    var name: String
+
     var body: some View {
         HStack() {
             VStack(
@@ -10,13 +12,15 @@ struct UserHeader: View {
                 Text("Hello")
                     .font(Poppins.BigCaption)
                     .foregroundColor(Colors.Gray)
-                Text("James Moore")
+                Text(name)
                     .font(Poppins.BigTitle)
                     .foregroundColor(Colors.DarkBlue)
             }
 
             Spacer()
-            Button(action: {}) {
+            NavigationLink(
+                destination: SubView().navigationTitle("Dummy")
+            ) {
                 ProfilePic(
                     icon: "DummyUser",
                     size: Sizes.Header.PhotoScale
@@ -32,5 +36,7 @@ struct UserHeader: View {
 }
 
 #Preview {
-    UserHeader()
+    UserHeader(
+        name: "James Moore"
+    )
 }

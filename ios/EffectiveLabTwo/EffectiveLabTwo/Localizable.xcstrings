@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "1.2 KM" : {
-
-    },
     "Accessibility_ProfilePic" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -83,31 +80,24 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Докторы"
+            "state" : "translated",
+            "value" : "Доктора"
           }
         }
       }
     },
-    "Dr. Imran Syahir" : {
-
-    },
-    "Dr. Joseph Brostito" : {
-
-    },
-    "FreeAt" : {
-      "extractionState" : "manual",
+    "Dummy" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Free at"
+            "value" : "Dummy"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Свободен в"
+            "value" : "Пустышка"
           }
         }
       }
@@ -146,6 +136,23 @@
         }
       }
     },
+    "HelloWorld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, world!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привет, мир!"
+          }
+        }
+      }
+    },
     "Home" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -179,9 +186,6 @@
           }
         }
       }
-    },
-    "James Moore" : {
-
     },
     "Medicine" : {
       "extractionState" : "manual",

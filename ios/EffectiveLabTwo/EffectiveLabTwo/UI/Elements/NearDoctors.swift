@@ -1,10 +1,11 @@
 import SwiftUI
 
 struct NearDoctors: View {
+    let doctors: [NearDoctorData]
+
     var body: some View {
         VStack (
-            alignment: .leading,
-            spacing: 12.0
+            alignment: .leading
         ) {
             Text("NearDoctor")
                 .foregroundColor(Colors.DarkBlue)
@@ -12,10 +13,17 @@ struct NearDoctors: View {
 
             LazyVStack (
                 alignment: .leading,
-                spacing: 12.0
+                spacing: Sizes.NearDoctors.SpacingV
             ) {
-                ForEach(1...10, id: \.self) { _ in
-                    NearDoctorCard()
+                ForEach(0 ..< doctors.count, id: \.self) { i in
+                    NearDoctorCard(
+                        image: doctors[i].image,
+                        name: doctors[i].name,
+                        title: doctors[i].title,
+                        distance: doctors[i].distance,
+                        rating: doctors[i].rating,
+                        freeTime: doctors[i].freeTime
+                    )
                 }
             }
         }
@@ -25,5 +33,24 @@ struct NearDoctors: View {
 }
 
 #Preview {
-    NearDoctors()
+    NearDoctors(
+        doctors: [
+            NearDoctorData(
+                image: "doctor2",
+                name: "Dr. Joseph Brostito",
+                title: "Dental Specialist",
+                rating: "4,8 (120 Reviews)",
+                freeTime: "Free at 13:00",
+                distance: "1.2 KM"
+            ),
+            NearDoctorData(
+                image: "doctor1",
+                name: "Dr. Joseph Brostito",
+                title: "Dental Specialist",
+                rating: "4,8 (120 Reviews)",
+                freeTime: "Free at 13:00",
+                distance: "1.2 KM"
+            )
+        ]
+    )
 }

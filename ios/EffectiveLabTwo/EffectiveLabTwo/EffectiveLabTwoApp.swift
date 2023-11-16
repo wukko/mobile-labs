@@ -4,7 +4,7 @@ import SwiftUI
 struct EffectiveLabTwoApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeDemoScreen()
+            ViewContainer()
         }
     }
 }

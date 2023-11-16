@@ -2,7 +2,9 @@ import SwiftUI
 
 struct SearchBar: View {
     var body: some View {
-        Button(action: {}) {
+        NavigationLink(
+            destination: SubView().navigationTitle("Dummy")
+        ) {
             HStack (spacing: Sizes.SearchBar.Spacing) {
                 Icon(
                     icon: "search",

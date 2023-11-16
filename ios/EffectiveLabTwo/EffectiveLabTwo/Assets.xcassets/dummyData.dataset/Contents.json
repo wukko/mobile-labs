@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "defaultData.json",
+      "idiom" : "universal",
+      "universal-type-identifier" : ".json"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

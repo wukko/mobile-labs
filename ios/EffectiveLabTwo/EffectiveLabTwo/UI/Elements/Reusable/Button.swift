@@ -7,7 +7,7 @@ struct SquishyButton: ButtonStyle {
             .scaleEffect(
                 configuration.isPressed ? 0.9 : 1.0
             ).animation(
-                .interpolatingSpring(stiffness: 100, damping: 20),
+                .interpolatingSpring(stiffness: 1000, damping: 100),
                 value: configuration.isPressed
             )
     }

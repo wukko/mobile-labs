@@ -16,7 +16,7 @@ struct Chip: View {
                 size: iconSize,
                 color: color
             )
-            Text(title)
+            Text(LocalizedStringKey(title))
                 .foregroundColor(color)
                 .font(Poppins.Chip)
                 .multilineTextAlignment(.leading)
@@ -25,14 +25,10 @@ struct Chip: View {
 }
 
 #Preview {
-    ZStack {
-        Rectangle()
-            .foregroundColor(.black)
-        Chip(
-            icon: "clock",
-            title: "11:00 - 12:00 AM",
-            color: .red,
-            iconSize: 16.0
-        )
-    }
+    Chip(
+        icon: "clock",
+        title: "11:00 - 12:00 AM",
+        color: .black,
+        iconSize: 16.0
+    )
 }

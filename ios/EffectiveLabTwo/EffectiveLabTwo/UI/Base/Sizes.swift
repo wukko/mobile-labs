@@ -54,6 +54,9 @@ struct Sizes {
     }
     
     struct NearDoctors {
-        static let PaddingTop = 12.0
+        static let PaddingTop = 12.0,
+                   ShadowY = 12.0,
+                   ShadowRad = 10.0,
+                   SpacingV = 12.0
     }
 }

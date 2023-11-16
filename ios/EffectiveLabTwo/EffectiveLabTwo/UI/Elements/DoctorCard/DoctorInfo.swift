@@ -1,10 +1,14 @@
 import SwiftUI
 
 struct DoctorCardInfo: View {
+    let image: String
+    let name: String
+    let title: String
+
     var body: some View {
         HStack (spacing: Sizes.DoctorCard.HSpacing) {
             ProfilePic(
-                icon: "doctor1",
+                icon: image,
                 size: Sizes.DoctorCard.PhotoScale
             )
 
@@ -12,12 +16,12 @@ struct DoctorCardInfo: View {
                 alignment: .leading,
                 spacing: Sizes.DoctorCard.LineSpacing
             ) {
-                Text("Dr. Imran Syahir")
+                Text(name)
                     .font(Poppins.ThickTitle)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("GeneralDoctor")
+                Text(LocalizedStringKey(title))
                     .font(Poppins.SmallCaption)
                     .foregroundColor(Colors.BrightGray)
                     .multilineTextAlignment(.leading)
@@ -31,4 +35,12 @@ struct DoctorCardInfo: View {
             )
         }
     }
+}
+
+#Preview {
+    DoctorCardInfo(
+        image: "doctor1",
+        name: "Dr. Imran Syahir",
+        title: "GeneralDoctor"
+    )
 }

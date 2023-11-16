@@ -2,23 +2,25 @@ import SwiftUI
 
 struct ActionButton: View {
     var icon: String
-    var name: LocalizedStringKey
+    var name: String
 
     var body: some View {
-        Button(action: {}) {
+        NavigationLink(
+            destination: SubView().navigationTitle("Dummy")
+        ) {
             VStack(spacing: Sizes.ActionRow.VSpacing) {
                 HStack {
                     Icon(
                         icon: icon,
                         size: Sizes.Icons.Big,
-                        color: Colors.IconBlue
+                        color: Colors.Blue
                     )
                 }
                 .padding(Sizes.Icons.Big)
                 .background(Colors.SubBackground)
                 .clipShape(Circle())
 
-                Text(name)
+                Text(LocalizedStringKey(name))
                     .font(Poppins.Caption)
                     .foregroundColor(Colors.Gray)
             }

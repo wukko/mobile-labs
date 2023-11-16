@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ActionRow: View {
+    let actions: [ActionButtonData]
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
@@ -8,30 +10,12 @@ struct ActionRow: View {
                 LazyHStack(
                     spacing: Sizes.ActionRow.Spacing
                 ) {
-                    ActionButton(
-                        icon: "covid",
-                        name: "Covid"
-                    )
-                    ActionButton(
-                        icon: "doctors",
-                        name: "Doctor"
-                    )
-                    ActionButton(
-                        icon: "link",
-                        name: "Medicine"
-                    )
-                    ActionButton(
-                        icon: "hospital",
-                        name: "Hospital"
-                    )
-                    ActionButton(
-                        icon: "home",
-                        name: "Calendar"
-                    )
-                    ActionButton(
-                        icon: "doctors",
-                        name: "Doctor"
-                    )
+                    ForEach(0 ..< actions.count, id: \.self) { i in
+                        ActionButton(
+                            icon: actions[i].icon,
+                            name: actions[i].name
+                        )
+                    }
                 }
                 Spacer().frame(width: Sizes.Base.Padding)
             }
@@ -40,5 +24,10 @@ struct ActionRow: View {
 }
 
 #Preview {
-    ActionRow()
+    ActionRow(
+        actions: [
+            ActionButtonData(name: "Covid", icon: "covid"),
+            ActionButtonData(name: "Medicine", icon: "link")
+        ]
+    )
 }
