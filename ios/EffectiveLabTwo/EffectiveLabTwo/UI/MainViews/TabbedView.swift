@@ -102,7 +102,8 @@ extension TabbedView{
                     color: isActive ? Colors.Blue : Colors.Gray
                 )
             }
-        }.scaledToFill()
+        }
+        .scaledToFill()
         .padding(Sizes.Tabs.Spacing)
         .background(isActive ? Colors.Blue.opacity(Colors.TabHighlightOpacity) : .clear)
         .cornerRadius(Sizes.Base.CornerRadius)
