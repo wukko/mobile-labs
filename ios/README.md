@@ -1,4 +1,4 @@
-# Effective iOS Lab (WIP)
+# Effective iOS Lab
 Medical app screen built using SwiftUI.  
 
 ![Two screenshots of UI without scroll and after scroll](/screenshots/ios/main.webp)
