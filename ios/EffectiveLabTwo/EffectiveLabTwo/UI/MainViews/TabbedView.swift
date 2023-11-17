@@ -89,7 +89,7 @@ extension TabbedView{
                     size: Sizes.Icons.Big,
                     color: isActive ? Colors.Blue : Colors.Gray
                 )
-                Text(title)
+                Text(LocalizedStringKey(title))
                     .font(Nunito.TabTitle)
                     .foregroundColor(Colors.Blue)
                     .frame(
@@ -102,7 +102,7 @@ extension TabbedView{
                     color: isActive ? Colors.Blue : Colors.Gray
                 )
             }
-        }
+        }.scaledToFill()
         .padding(Sizes.Tabs.Spacing)
         .background(isActive ? Colors.Blue.opacity(Colors.TabHighlightOpacity) : .clear)
         .cornerRadius(Sizes.Base.CornerRadius)
