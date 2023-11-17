@@ -59,4 +59,13 @@ struct Sizes {
                    ShadowRad = 10.0,
                    SpacingV = 12.0
     }
+    
+    struct Tabs {
+        static let PaddingTop = 10.0,
+                   Spacing = 12.0,
+                   InnerSpacing = 8.0,
+                   MinWidth = 40.0,
+                   Height = 48.0
+        
+    }
 }

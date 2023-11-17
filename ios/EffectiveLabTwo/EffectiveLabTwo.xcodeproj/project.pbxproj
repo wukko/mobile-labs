@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590274E92B0705F100146745 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590274E82B0705F100146745 /* TabbedView.swift */; };
 		590C2E0E2B061D1900494DA1 /* NearDoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */; };
 		590C2E102B06293100494DA1 /* NearDoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */; };
 		590C2E122B06293D00494DA1 /* NearDoctorTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */; };
 		590C2E142B06327700494DA1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E132B06327700494DA1 /* Button.swift */; };
-		590C2E162B06677500494DA1 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E152B06677500494DA1 /* ViewContainer.swift */; };
 		590C2E182B0674DC00494DA1 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E172B0674DC00494DA1 /* SubView.swift */; };
 		590C2E1A2B0679CF00494DA1 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E192B0679CF00494DA1 /* HomePage.swift */; };
 		590C2E1E2B067D8400494DA1 /* dummyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 590C2E1D2B067D8400494DA1 /* dummyData.json */; };
@@ -42,11 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		590274E82B0705F100146745 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
 		590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorCard.swift; sourceTree = "<group>"; };
 		590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorInfo.swift; sourceTree = "<group>"; };
 		590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorTimes.swift; sourceTree = "<group>"; };
 		590C2E132B06327700494DA1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		590C2E152B06677500494DA1 /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		590C2E172B0674DC00494DA1 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		590C2E192B0679CF00494DA1 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		590C2E1D2B067D8400494DA1 /* dummyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummyData.json; sourceTree = "<group>"; };
@@ -89,9 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590274EA2B072B8900146745 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				590274E82B0705F100146745 /* TabbedView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
 		590C2E0C2B061CF600494DA1 /* NearDoctors */ = {
 			isa = PBXGroup;
 			children = (
+				5917BA882B060C2200880FAF /* NearDoctors.swift */,
 				590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */,
 				590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */,
 				590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */,
@@ -125,7 +134,6 @@
 				5917BA682B05DE3200880FAF /* Localizable.xcstrings */,
 				5917BA502B05DAAD00880FAF /* Assets.xcassets */,
 				5917BA8A2B060E6800880FAF /* Preview Content */,
-				590C2E152B06677500494DA1 /* ViewContainer.swift */,
 			);
 			path = EffectiveLabTwo;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 		5917BA5A2B05DAFC00880FAF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				590274EA2B072B8900146745 /* MainViews */,
 				5917BA6D2B05E5E800880FAF /* Base */,
 				5917BA5B2B05DAFC00880FAF /* Screens */,
 				5917BA5C2B05DAFC00880FAF /* Elements */,
@@ -155,13 +164,11 @@
 			children = (
 				590C2E0C2B061CF600494DA1 /* NearDoctors */,
 				5917BA832B0601F700880FAF /* ActionRow.swift */,
-				5917BA732B05E92C00880FAF /* DoctorCard.swift */,
 				5917BA5D2B05DAFC00880FAF /* Header.swift */,
 				5917BA812B05FB7700880FAF /* SearchBar.swift */,
 				5917BA852B0602A300880FAF /* ActionRow */,
 				5917BA752B05EE0100880FAF /* DoctorCard */,
 				5917BA7A2B05EF6800880FAF /* Reusable */,
-				5917BA882B060C2200880FAF /* NearDoctors.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 		5917BA752B05EE0100880FAF /* DoctorCard */ = {
 			isa = PBXGroup;
 			children = (
+				5917BA732B05E92C00880FAF /* DoctorCard.swift */,
 				5917BA762B05EE2200880FAF /* DoctorInfo.swift */,
 				5917BA782B05EE2C00880FAF /* DoctorTimes.swift */,
 			);
@@ -310,8 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5917BA892B060C2200880FAF /* NearDoctors.swift in Sources */,
+				590274E92B0705F100146745 /* TabbedView.swift in Sources */,
 				590C2E1A2B0679CF00494DA1 /* HomePage.swift in Sources */,
-				590C2E162B06677500494DA1 /* ViewContainer.swift in Sources */,
 				5917BA822B05FB7700880FAF /* SearchBar.swift in Sources */,
 				5917BA722B05E80400880FAF /* Sizes.swift in Sources */,
 				5917BA6B2B05E01500880FAF /* Fonts.swift in Sources */,

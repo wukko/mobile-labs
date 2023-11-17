@@ -10,4 +10,6 @@ struct Colors {
                AlmostWhite = Color(red: 0.98, green: 0.98, blue: 0.98),
                Yellow = Color(red: 1, green: 0.69, blue: 0.32),
                BrightBlue = Color(red: 0.28, green: 0.58, blue: 1)
+
+    static let TabHighlightOpacity = 0.1
 }

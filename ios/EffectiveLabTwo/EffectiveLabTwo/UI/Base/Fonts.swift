@@ -11,3 +11,7 @@ struct Poppins {
     
     static let Chip = Font.custom("Poppins-Regular", size: 12)
 }
+
+struct Nunito {
+    static let TabTitle = Font.custom("Nunito-Bold", size: 14)
+}
