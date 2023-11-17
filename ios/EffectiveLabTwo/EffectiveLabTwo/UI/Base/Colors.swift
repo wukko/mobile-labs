@@ -7,7 +7,7 @@ struct Colors {
                Blue = Color(red: 0.28, green: 0.58, blue: 1),
                SubBackground = Color(red: 0.98, green: 0.98, blue: 0.98),
                Shadow = Color(red: 0.35, green: 0.46, blue: 0.65).opacity(0.05),
-               AlmostWhite = Color(red: 0.77, green: 0.77, blue: 0.77),
+               AlmostWhite = Color(red: 0.98, green: 0.98, blue: 0.98),
                Yellow = Color(red: 1, green: 0.69, blue: 0.32),
                BrightBlue = Color(red: 0.28, green: 0.58, blue: 1)
 }

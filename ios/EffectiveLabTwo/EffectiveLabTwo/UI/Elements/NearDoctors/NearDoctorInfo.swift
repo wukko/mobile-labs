@@ -10,7 +10,8 @@ struct NearDoctorInfo: View {
         HStack (spacing: Sizes.DoctorCard.HSpacing) {
             ProfilePic(
                 icon: image,
-                size: Sizes.DoctorCard.PhotoScale
+                size: Sizes.DoctorCard.PhotoScale,
+                bgColor: Colors.AlmostWhite
             )
 
             VStack (
