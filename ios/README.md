@@ -5,14 +5,31 @@ Medical app screen built using SwiftUI.
 
 <details><summary>More screenshots</summary>  
 
-![Three screenshots showing the app in various system states](/screenshots/ios/more.webp)
+  
+  ![Three screenshots showing the app in various system states](/screenshots/ios/more.webp)
 
+  
+</details><br>  
+
+<details><summary>Videos</summary> 
+
+  
+  App navigation:  
+  
+
+  https://github.com/wukko/mobile-labs/assets/71202418/a7922051-eaac-4dcf-a6b0-3fb5b892080f
+
+
+
+  App navigation with VoiceOver:  
+
+
+  https://github.com/wukko/mobile-labs/assets/71202418/9f6a3957-8a08-473f-8cdf-1d6577237e54
 </details><br>  
 
 ## What's in this directory?
-`/ios/EffectiveLabTwo` directory includes full source code and project for this iOS app.  
+`/ios/EffectiveLabTwo` directory includes full source code for this iOS app. 
+Clone the repo and open "`/ios/EffectiveLabTwo`" folder in Xcode to build it.
 
-Clone the repo and open "`/ios/EffectiveLabTwo`" folder in Xcode to build the project or check out the source code.
-
-## What can this app do?
-Not much. It can show you native UI with pressable buttons in either English or Russian, that's about it.
+## What's special about this app?
+Not much. But it has squishy buttons, animations, localization, and VoiceOver support.
