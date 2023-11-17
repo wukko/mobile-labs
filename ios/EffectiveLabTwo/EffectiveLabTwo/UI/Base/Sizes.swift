@@ -14,7 +14,7 @@ struct Sizes {
         static let Spacing = 20.0
     }
     // elements
-    
+
     // reusable
     struct Icons {
         static let Big = 24.0,
@@ -27,7 +27,8 @@ struct Sizes {
     struct Header {
         static let LineSpacing = 2.0,
                    PhotoScale = 56.0,
-                   BottomSpace = 10.0
+                   BottomSpace = 10.0,
+                   PaddingTop = 20.0
     }
     struct DoctorCard {
         static let PhotoScale = 48.0,

@@ -5,39 +5,45 @@ struct HomeDemoScreen: View {
         filename: "dummyData"
     )
     var body: some View {
-        ScrollView (.vertical, showsIndicators: false) {
-            LazyVStack (
-                alignment: .leading
-            ) {
-                VStack (spacing: Sizes.Page.Spacing) {
-                    UserHeader(
-                        name: ScreenData.userName
-                    )
-                    DoctorCard(
-                        image: ScreenData.doctorCard.image,
-                        name: ScreenData.doctorCard.name,
-                        title: ScreenData.doctorCard.title,
-                        date: ScreenData.doctorCard.date,
-                        timeRange: ScreenData.doctorCard.timeRange
-                    )
-                    SearchBar()
-                }
-                .padding(Sizes.Base.Padding)
+        VStack(spacing: 0) {
+            UserHeader(
+                name: ScreenData.userName
+            )
+            .padding(.horizontal, Sizes.Base.Padding)
+            .padding(.top, Sizes.Header.PaddingTop)
 
-                ActionRow(
-                    actions: ScreenData.actionButtons
-                )
-
-                VStack (spacing: Sizes.Page.Spacing) {
-                    NearDoctors(
-                        doctors: ScreenData.nearDoctors
+            ScrollView (.vertical, showsIndicators: false) {
+                LazyVStack (
+                    alignment: .leading
+                ) {
+                    VStack (spacing: Sizes.Page.Spacing) {
+                        DoctorCard(
+                            image: ScreenData.doctorCard.image,
+                            name: ScreenData.doctorCard.name,
+                            title: ScreenData.doctorCard.title,
+                            date: ScreenData.doctorCard.date,
+                            timeRange: ScreenData.doctorCard.timeRange
+                        )
+                        SearchBar()
+                    }
+                    .padding([.horizontal, .bottom], Sizes.Base.Padding)
+                    .padding(.top, Sizes.Page.Spacing)
+                    
+                    ActionRow(
+                        actions: ScreenData.actionButtons
                     )
+                    
+                    VStack (spacing: Sizes.Page.Spacing) {
+                        NearDoctors(
+                            doctors: ScreenData.nearDoctors
+                        )
+                    }
+                    .padding(Sizes.Base.Padding)
                 }
-                .padding(Sizes.Base.Padding)
             }
+            .background(.white)
+            .scrollBounceBehavior(.basedOnSize)
         }
-        .background(.white)
-        .scrollBounceBehavior(.basedOnSize)
     }
 }
 

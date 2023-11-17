@@ -95,7 +95,7 @@ extension TabbedView{
                     .foregroundColor(Colors.Blue)
                     .frame(
                         minWidth: Sizes.Tabs.MinWidth
-                    )
+                    ).accessibilityHidden(true)
             } else {
                 Icon(
                     icon: icon,

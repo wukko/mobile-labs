@@ -4,7 +4,7 @@ struct UserHeader: View {
     var name: String
 
     var body: some View {
-        HStack() {
+        HStack {
             VStack(
                 alignment: .leading,
                 spacing: Sizes.Header.LineSpacing
@@ -16,7 +16,6 @@ struct UserHeader: View {
                     .font(Poppins.BigTitle)
                     .foregroundColor(Colors.DarkBlue)
             }
-
             Spacer()
             NavigationLink(
                 destination: SubView().navigationTitle("Dummy")
@@ -29,10 +28,11 @@ struct UserHeader: View {
             .accessibilityLabel(LocalizedStringKey("Accessibility_ProfilePic"))
             .buttonStyle(SquishyButton())
         }
-        .padding(.bottom, Sizes.Header.BottomSpace)
         .frame(
             alignment: .leading
         )
+        .background(.white)
+        .padding(.bottom, Sizes.Header.BottomSpace)
     }
 }
 
