@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		590274E92B0705F100146745 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590274E82B0705F100146745 /* TabbedView.swift */; };
+		590C2E0E2B061D1900494DA1 /* NearDoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */; };
+		590C2E102B06293100494DA1 /* NearDoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */; };
+		590C2E122B06293D00494DA1 /* NearDoctorTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */; };
+		590C2E142B06327700494DA1 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E132B06327700494DA1 /* Button.swift */; };
+		590C2E182B0674DC00494DA1 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E172B0674DC00494DA1 /* SubView.swift */; };
+		590C2E1A2B0679CF00494DA1 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E192B0679CF00494DA1 /* HomePage.swift */; };
+		590C2E1E2B067D8400494DA1 /* dummyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 590C2E1D2B067D8400494DA1 /* dummyData.json */; };
+		590C2E202B067DA500494DA1 /* LocalJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590C2E1F2B067DA500494DA1 /* LocalJSON.swift */; };
+		5917BA4D2B05DAAC00880FAF /* EffectiveLabTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA4C2B05DAAC00880FAF /* EffectiveLabTwoApp.swift */; };
+		5917BA4F2B05DAAC00880FAF /* HomeDemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA4E2B05DAAC00880FAF /* HomeDemoScreen.swift */; };
+		5917BA512B05DAAD00880FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA502B05DAAD00880FAF /* Assets.xcassets */; };
+		5917BA632B05DAFC00880FAF /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA5D2B05DAFC00880FAF /* Header.swift */; };
+		5917BA642B05DAFC00880FAF /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA5F2B05DAFC00880FAF /* Nunito-Bold.ttf */; };
+		5917BA652B05DAFC00880FAF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA602B05DAFC00880FAF /* Poppins-Regular.ttf */; };
+		5917BA662B05DAFC00880FAF /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA612B05DAFC00880FAF /* Poppins-Bold.ttf */; };
+		5917BA672B05DAFC00880FAF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA622B05DAFC00880FAF /* Poppins-SemiBold.ttf */; };
+		5917BA692B05DE3200880FAF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA682B05DE3200880FAF /* Localizable.xcstrings */; };
+		5917BA6B2B05E01500880FAF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA6A2B05E01500880FAF /* Fonts.swift */; };
+		5917BA6F2B05E5FD00880FAF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA6E2B05E5FD00880FAF /* Colors.swift */; };
+		5917BA722B05E80400880FAF /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA712B05E80400880FAF /* Sizes.swift */; };
+		5917BA742B05E92C00880FAF /* DoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA732B05E92C00880FAF /* DoctorCard.swift */; };
+		5917BA772B05EE2200880FAF /* DoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA762B05EE2200880FAF /* DoctorInfo.swift */; };
+		5917BA792B05EE2C00880FAF /* DoctorTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA782B05EE2C00880FAF /* DoctorTimes.swift */; };
+		5917BA7C2B05EF7600880FAF /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA7B2B05EF7600880FAF /* Chip.swift */; };
+		5917BA7E2B05F80400880FAF /* ProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA7D2B05F80400880FAF /* ProfilePic.swift */; };
+		5917BA802B05F94400880FAF /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA7F2B05F94400880FAF /* Icon.swift */; };
+		5917BA822B05FB7700880FAF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA812B05FB7700880FAF /* SearchBar.swift */; };
+		5917BA842B0601F700880FAF /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA832B0601F700880FAF /* ActionRow.swift */; };
+		5917BA872B06037700880FAF /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA862B06037700880FAF /* ActionButton.swift */; };
+		5917BA892B060C2200880FAF /* NearDoctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5917BA882B060C2200880FAF /* NearDoctors.swift */; };
+		5917BA8C2B060E6800880FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5917BA8B2B060E6800880FAF /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		590274E82B0705F100146745 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
+		590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorCard.swift; sourceTree = "<group>"; };
+		590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorInfo.swift; sourceTree = "<group>"; };
+		590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorTimes.swift; sourceTree = "<group>"; };
+		590C2E132B06327700494DA1 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		590C2E172B0674DC00494DA1 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		590C2E192B0679CF00494DA1 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		590C2E1D2B067D8400494DA1 /* dummyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummyData.json; sourceTree = "<group>"; };
+		590C2E1F2B067DA500494DA1 /* LocalJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSON.swift; sourceTree = "<group>"; };
+		5917BA492B05DAAC00880FAF /* EffectiveLabTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectiveLabTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5917BA4C2B05DAAC00880FAF /* EffectiveLabTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveLabTwoApp.swift; sourceTree = "<group>"; };
+		5917BA4E2B05DAAC00880FAF /* HomeDemoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDemoScreen.swift; sourceTree = "<group>"; };
+		5917BA502B05DAAD00880FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5917BA5D2B05DAFC00880FAF /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		5917BA5F2B05DAFC00880FAF /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		5917BA602B05DAFC00880FAF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		5917BA612B05DAFC00880FAF /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		5917BA622B05DAFC00880FAF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		5917BA682B05DE3200880FAF /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		5917BA6A2B05E01500880FAF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5917BA6C2B05E50000880FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5917BA6E2B05E5FD00880FAF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5917BA712B05E80400880FAF /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		5917BA732B05E92C00880FAF /* DoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCard.swift; sourceTree = "<group>"; };
+		5917BA762B05EE2200880FAF /* DoctorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfo.swift; sourceTree = "<group>"; };
+		5917BA782B05EE2C00880FAF /* DoctorTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTimes.swift; sourceTree = "<group>"; };
+		5917BA7B2B05EF7600880FAF /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		5917BA7D2B05F80400880FAF /* ProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePic.swift; sourceTree = "<group>"; };
+		5917BA7F2B05F94400880FAF /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		5917BA812B05FB7700880FAF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5917BA832B0601F700880FAF /* ActionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
+		5917BA862B06037700880FAF /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		5917BA882B060C2200880FAF /* NearDoctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctors.swift; sourceTree = "<group>"; };
+		5917BA8B2B060E6800880FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5917BA462B05DAAC00880FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590274EA2B072B8900146745 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				590274E82B0705F100146745 /* TabbedView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		590C2E0C2B061CF600494DA1 /* NearDoctors */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA882B060C2200880FAF /* NearDoctors.swift */,
+				590C2E0D2B061D1900494DA1 /* NearDoctorCard.swift */,
+				590C2E0F2B06293100494DA1 /* NearDoctorInfo.swift */,
+				590C2E112B06293C00494DA1 /* NearDoctorTimes.swift */,
+			);
+			path = NearDoctors;
+			sourceTree = "<group>";
+		};
+		5917BA402B05DAAC00880FAF = {
+			isa = PBXGroup;
+			children = (
+				5917BA4B2B05DAAC00880FAF /* EffectiveLabTwo */,
+				5917BA4A2B05DAAC00880FAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5917BA4A2B05DAAC00880FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA492B05DAAC00880FAF /* EffectiveLabTwo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5917BA4B2B05DAAC00880FAF /* EffectiveLabTwo */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA702B05E79200880FAF /* Data */,
+				5917BA6C2B05E50000880FAF /* Info.plist */,
+				5917BA5A2B05DAFC00880FAF /* UI */,
+				5917BA4C2B05DAAC00880FAF /* EffectiveLabTwoApp.swift */,
+				5917BA682B05DE3200880FAF /* Localizable.xcstrings */,
+				5917BA502B05DAAD00880FAF /* Assets.xcassets */,
+				5917BA8A2B060E6800880FAF /* Preview Content */,
+			);
+			path = EffectiveLabTwo;
+			sourceTree = "<group>";
+		};
+		5917BA5A2B05DAFC00880FAF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				590274EA2B072B8900146745 /* MainViews */,
+				5917BA6D2B05E5E800880FAF /* Base */,
+				5917BA5B2B05DAFC00880FAF /* Screens */,
+				5917BA5C2B05DAFC00880FAF /* Elements */,
+				5917BA5E2B05DAFC00880FAF /* Fonts */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5917BA5B2B05DAFC00880FAF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA4E2B05DAAC00880FAF /* HomeDemoScreen.swift */,
+				590C2E172B0674DC00494DA1 /* SubView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5917BA5C2B05DAFC00880FAF /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				590C2E0C2B061CF600494DA1 /* NearDoctors */,
+				5917BA832B0601F700880FAF /* ActionRow.swift */,
+				5917BA5D2B05DAFC00880FAF /* Header.swift */,
+				5917BA812B05FB7700880FAF /* SearchBar.swift */,
+				5917BA852B0602A300880FAF /* ActionRow */,
+				5917BA752B05EE0100880FAF /* DoctorCard */,
+				5917BA7A2B05EF6800880FAF /* Reusable */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		5917BA5E2B05DAFC00880FAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA5F2B05DAFC00880FAF /* Nunito-Bold.ttf */,
+				5917BA602B05DAFC00880FAF /* Poppins-Regular.ttf */,
+				5917BA612B05DAFC00880FAF /* Poppins-Bold.ttf */,
+				5917BA622B05DAFC00880FAF /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5917BA6D2B05E5E800880FAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA6A2B05E01500880FAF /* Fonts.swift */,
+				5917BA6E2B05E5FD00880FAF /* Colors.swift */,
+				5917BA712B05E80400880FAF /* Sizes.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5917BA702B05E79200880FAF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				590C2E1D2B067D8400494DA1 /* dummyData.json */,
+				590C2E192B0679CF00494DA1 /* HomePage.swift */,
+				590C2E1F2B067DA500494DA1 /* LocalJSON.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5917BA752B05EE0100880FAF /* DoctorCard */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA732B05E92C00880FAF /* DoctorCard.swift */,
+				5917BA762B05EE2200880FAF /* DoctorInfo.swift */,
+				5917BA782B05EE2C00880FAF /* DoctorTimes.swift */,
+			);
+			path = DoctorCard;
+			sourceTree = "<group>";
+		};
+		5917BA7A2B05EF6800880FAF /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA7B2B05EF7600880FAF /* Chip.swift */,
+				5917BA7D2B05F80400880FAF /* ProfilePic.swift */,
+				5917BA7F2B05F94400880FAF /* Icon.swift */,
+				590C2E132B06327700494DA1 /* Button.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		5917BA852B0602A300880FAF /* ActionRow */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA862B06037700880FAF /* ActionButton.swift */,
+			);
+			path = ActionRow;
+			sourceTree = "<group>";
+		};
+		5917BA8A2B060E6800880FAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5917BA8B2B060E6800880FAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5917BA482B05DAAC00880FAF /* EffectiveLabTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5917BA572B05DAAD00880FAF /* Build configuration list for PBXNativeTarget "EffectiveLabTwo" */;
+			buildPhases = (
+				5917BA452B05DAAC00880FAF /* Sources */,
+				5917BA462B05DAAC00880FAF /* Frameworks */,
+				5917BA472B05DAAC00880FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectiveLabTwo;
+			productName = EffectiveLabTwo;
+			productReference = 5917BA492B05DAAC00880FAF /* EffectiveLabTwo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5917BA412B05DAAC00880FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5917BA482B05DAAC00880FAF = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5917BA442B05DAAC00880FAF /* Build configuration list for PBXProject "EffectiveLabTwo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5917BA402B05DAAC00880FAF;
+			productRefGroup = 5917BA4A2B05DAAC00880FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5917BA482B05DAAC00880FAF /* EffectiveLabTwo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5917BA472B05DAAC00880FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5917BA642B05DAFC00880FAF /* Nunito-Bold.ttf in Resources */,
+				5917BA662B05DAFC00880FAF /* Poppins-Bold.ttf in Resources */,
+				5917BA672B05DAFC00880FAF /* Poppins-SemiBold.ttf in Resources */,
+				5917BA8C2B060E6800880FAF /* Preview Assets.xcassets in Resources */,
+				590C2E1E2B067D8400494DA1 /* dummyData.json in Resources */,
+				5917BA512B05DAAD00880FAF /* Assets.xcassets in Resources */,
+				5917BA692B05DE3200880FAF /* Localizable.xcstrings in Resources */,
+				5917BA652B05DAFC00880FAF /* Poppins-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5917BA452B05DAAC00880FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5917BA892B060C2200880FAF /* NearDoctors.swift in Sources */,
+				590274E92B0705F100146745 /* TabbedView.swift in Sources */,
+				590C2E1A2B0679CF00494DA1 /* HomePage.swift in Sources */,
+				5917BA822B05FB7700880FAF /* SearchBar.swift in Sources */,
+				5917BA722B05E80400880FAF /* Sizes.swift in Sources */,
+				5917BA6B2B05E01500880FAF /* Fonts.swift in Sources */,
+				5917BA772B05EE2200880FAF /* DoctorInfo.swift in Sources */,
+				590C2E0E2B061D1900494DA1 /* NearDoctorCard.swift in Sources */,
+				5917BA7C2B05EF7600880FAF /* Chip.swift in Sources */,
+				5917BA742B05E92C00880FAF /* DoctorCard.swift in Sources */,
+				590C2E182B0674DC00494DA1 /* SubView.swift in Sources */,
+				5917BA6F2B05E5FD00880FAF /* Colors.swift in Sources */,
+				5917BA802B05F94400880FAF /* Icon.swift in Sources */,
+				590C2E122B06293D00494DA1 /* NearDoctorTimes.swift in Sources */,
+				5917BA7E2B05F80400880FAF /* ProfilePic.swift in Sources */,
+				5917BA792B05EE2C00880FAF /* DoctorTimes.swift in Sources */,
+				5917BA842B0601F700880FAF /* ActionRow.swift in Sources */,
+				5917BA4F2B05DAAC00880FAF /* HomeDemoScreen.swift in Sources */,
+				590C2E142B06327700494DA1 /* Button.swift in Sources */,
+				590C2E102B06293100494DA1 /* NearDoctorInfo.swift in Sources */,
+				5917BA632B05DAFC00880FAF /* Header.swift in Sources */,
+				5917BA4D2B05DAAC00880FAF /* EffectiveLabTwoApp.swift in Sources */,
+				5917BA872B06037700880FAF /* ActionButton.swift in Sources */,
+				590C2E202B067DA500494DA1 /* LocalJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5917BA552B05DAAD00880FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5917BA562B05DAAD00880FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5917BA582B05DAAD00880FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EffectiveLabTwo/Preview Content\"";
+				DEVELOPMENT_TEAM = R6T6D9TZ25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EffectiveLabTwo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EffectiveLabTwo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wukko.EffectiveLabTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5917BA592B05DAAD00880FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EffectiveLabTwo/Preview Content\"";
+				DEVELOPMENT_TEAM = R6T6D9TZ25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EffectiveLabTwo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EffectiveLabTwo;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wukko.EffectiveLabTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5917BA442B05DAAC00880FAF /* Build configuration list for PBXProject "EffectiveLabTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5917BA552B05DAAD00880FAF /* Debug */,
+				5917BA562B05DAAD00880FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5917BA572B05DAAD00880FAF /* Build configuration list for PBXNativeTarget "EffectiveLabTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5917BA582B05DAAD00880FAF /* Debug */,
+				5917BA592B05DAAD00880FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5917BA412B05DAAC00880FAF /* Project object */;
+}

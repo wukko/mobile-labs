@@ -1,0 +1,70 @@
+{
+    "userName": "James Moore",
+    "doctorCard": {
+        "image": "doctor1",
+        "name": "Dr. Imran Syahir",
+        "title": "GeneralDoctor",
+        "date": "Sunday, 12 June",
+        "timeRange": "11:00 - 12:00 AM"
+    },
+    "actionButtons": [
+        {
+            "name": "Covid",
+            "icon": "covid"
+        },
+        {
+            "name": "Doctor",
+            "icon": "doctors"
+        },
+        {
+            "name": "Medicine",
+            "icon": "link"
+        },
+        {
+            "name": "Hospital",
+            "icon": "hospital"
+        },
+        {
+            "name": "Calendar",
+            "icon": "doctors"
+        },
+        {
+            "name": "Hospital",
+            "icon": "covid"
+        }
+    ],
+    "nearDoctors": [
+        {
+            "image": "doctor2",
+            "name": "Dr. Joseph Brostito",
+            "title": "GeneralDoctor",
+            "rating": "3,8 (90 Reviews)",
+            "freeTime": "Free until: 16:00",
+            "distance": "0.9 KM"
+        },
+        {
+            "image": "doctor2",
+            "name": "Dr. Joseph Brostito",
+            "title": "DentalSpecialist",
+            "rating": "4,8 (120 Reviews)",
+            "freeTime": "Free at: 17:00",
+            "distance": "1.2 KM"
+        },
+        {
+            "image": "doctor2",
+            "name": "Dr. Joseph Brostito",
+            "title": "DentalSpecialist",
+            "rating": "4,8 (120 Reviews)",
+            "freeTime": "Free at: 17:00",
+            "distance": "1.2 KM"
+        },
+        {
+            "image": "doctor2",
+            "name": "Dr. Joseph Brostito",
+            "title": "DentalSpecialist",
+            "rating": "4,8 (120 Reviews)",
+            "freeTime": "Free at: 17:00",
+            "distance": "1.2 KM"
+        }
+    ]
+}
