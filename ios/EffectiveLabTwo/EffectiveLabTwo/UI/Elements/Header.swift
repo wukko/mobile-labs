@@ -26,6 +26,7 @@ struct UserHeader: View {
                     size: Sizes.Header.PhotoScale
                 )
             }
+            .accessibilityLabel(LocalizedStringKey("Accessibility_ProfilePic"))
             .buttonStyle(SquishyButton())
         }
         .padding(.bottom, Sizes.Header.BottomSpace)

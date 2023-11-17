@@ -65,6 +65,7 @@ struct TabbedView: View {
                                 title: item.title,
                                 isActive: (selectedTab == item.rawValue)
                             )
+                            .accessibilityLabel(LocalizedStringKey(item.title))
                         }
                         .frame(
                             maxWidth: .infinity

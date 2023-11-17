@@ -244,13 +244,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Me"
+            "value" : "Профиль"
           }
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Я"
+            "state" : "needs_review",
+            "value" : "Профиль"
           }
         }
       }
