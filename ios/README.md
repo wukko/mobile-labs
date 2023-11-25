@@ -32,4 +32,6 @@ Medical app screen built using SwiftUI.
 Clone the repo and open "`/ios/EffectiveLabTwo`" folder in Xcode to build it.
 
 ## What's special about this app?
-Not much. But it has squishy buttons, animations, localization, and VoiceOver support.
+Not much, but it has squishy buttons, animations, and localization.
+Also fully compatible with VoiceOver.
+
