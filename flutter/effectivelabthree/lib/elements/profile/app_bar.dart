@@ -7,7 +7,14 @@ import 'package:effectivelabthree/elements/icon.dart';
 import 'package:effectivelabthree/elements/profile/head.dart';
 
 class ProfileAppBar extends StatelessWidget {
-  const ProfileAppBar({super.key});
+  final String placeholderAsset;
+  final String name;
+
+  const ProfileAppBar({
+    super.key,
+    required this.placeholderAsset,
+    required this.name,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +25,10 @@ class ProfileAppBar extends StatelessWidget {
       backgroundColor: Colors.white,
       surfaceTintColor: Colors.white,
       shadowColor: CustomColor.shadowBlack,
-      flexibleSpace:
-          const ProfileHead(placeholderAsset: "test", name: "Екатерина"),
+      flexibleSpace: ProfileHead(
+        placeholderAsset: placeholderAsset,
+        name: name,
+      ),
       leading: IconButton(
         onPressed: () {},
         icon: const CustomIcon(

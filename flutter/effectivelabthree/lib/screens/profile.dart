@@ -21,11 +21,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
         body: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return [
-              const ProfileAppBar(),
+              const ProfileAppBar(
+                placeholderAsset: "test",
+                name: "Екатерина",
+              ),
             ];
           },
           body: const TabBarView(
             children: [
+              // normally data would be parsed and serialized in this file,
+              // but i decided to not overcomplicate things even further
               ProfilePage(),
               SettingsPage(),
             ],

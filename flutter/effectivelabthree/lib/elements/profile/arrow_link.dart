@@ -8,12 +8,14 @@ class ArrowLink extends StatelessWidget {
   final String icon;
   final String title;
   final String subtitle;
+  final bool isLast;
 
   const ArrowLink({
     super.key,
     required this.icon,
     required this.title,
     this.subtitle = "",
+    this.isLast = false,
   });
 
   @override
@@ -31,11 +33,13 @@ class ArrowLink extends StatelessWidget {
             ),
           ),
         ),
-        const Divider(
-          height: 0,
-          indent: Sizes.bigIcon + Sizes.padding + Sizes.betweenPadding,
-          color: CustomColor.dividerGrey,
-        ),
+        if (!isLast) ...[
+          const Divider(
+            height: 0,
+            indent: Sizes.bigIcon + Sizes.padding + Sizes.betweenPadding,
+            color: CustomColor.dividerGrey,
+          ),
+        ],
       ],
     );
   }

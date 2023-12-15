@@ -17,7 +17,7 @@ class CustomIcon extends StatelessWidget {
       width: size.toDouble(),
       child: ClipRRect(
         child: Image(
-          image: AssetImage("assets/icons/${size}/${name}.png"),
+          image: AssetImage("assets/icons/$size/$name.png"),
           fit: BoxFit.cover,
         ),
       ),

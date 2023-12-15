@@ -13,6 +13,22 @@ class Tariff {
     required this.title,
     this.subtitle = "",
   });
+
+  factory Tariff.fromJson(Map<String, dynamic> json) {
+    return Tariff(
+      icon: json['icon'],
+      title: json['title'],
+      subtitle: json['subtitle'] ?? "",
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'icon': icon,
+      'title': title,
+      'subtitle': subtitle,
+    };
+  }
 }
 
 class TariffsAndLimits extends StatelessWidget {
@@ -34,11 +50,14 @@ class TariffsAndLimits extends StatelessWidget {
           ),
         ),
         Column(
-          children: tariffs.map((tariff) {
+          children: tariffs.asMap().entries.map((entry) {
+            int index = entry.key;
+            Tariff tariff = entry.value;
             return ArrowLink(
               icon: tariff.icon,
               title: tariff.title,
               subtitle: tariff.subtitle,
+              isLast: index == tariffs.length - 1,
             );
           }).toList(),
         ),

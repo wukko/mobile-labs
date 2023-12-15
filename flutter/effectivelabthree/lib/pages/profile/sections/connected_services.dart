@@ -16,6 +16,24 @@ class Subscription {
     required this.renew,
     required this.price,
   });
+
+  factory Subscription.fromJson(Map<String, dynamic> json) {
+    return Subscription(
+      icon: json['icon'],
+      title: json['title'],
+      renew: json['renew'],
+      price: json['price'],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'icon': icon,
+      'title': title,
+      'renew': renew,
+      'price': price,
+    };
+  }
 }
 
 class ConnectedServices extends StatelessWidget {
