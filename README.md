@@ -4,7 +4,7 @@ Monorepo for all projects developed during mobile dev course by Effective.
 ### Navigation
 - [Android](/android/README.md)
 - [iOS](/ios/README.md)
-- Flutter
+- [Flutter](/flutter/README.md)
 - Web
 
 ### Download/Preview
