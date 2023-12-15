@@ -1,37 +1,41 @@
 import 'package:flutter/material.dart';
+import 'package:effectivelabthree/base/sizes.dart';
+import 'package:effectivelabthree/base/text_styles.dart';
 
-class SectionText extends StatelessWidget {
-  const SectionText({super.key});
+class SectionText extends StatefulWidget {
+  final String header;
+  final String text;
+
+  const SectionText({
+    super.key,
+    required this.header,
+    required this.text,
+  });
 
   @override
+  SectionTextState createState() => SectionTextState();
+}
+
+class SectionTextState extends State<SectionText> {
+  @override
   Widget build(BuildContext context) {
-    return const Padding(
-        padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+    return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: Sizes.padding),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 14),
+            const SizedBox(height: Sizes.padding),
             Text(
-              "У вас подлючено",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                letterSpacing: -0.70,
-              ),
+              widget.header,
+              style: TextStyles.mediumTitle,
             ),
-            SizedBox(height: 2),
+            const SizedBox(height: Sizes.multiLinePadding),
             Text(
-              "Подписки, автоплатежи и сервисы на которые вы подписались",
-              style: TextStyle(
-                color: Color(0x7f000000),
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-                letterSpacing: -0.42,
-              ),
+              widget.text,
+              style: TextStyles.bodyGrey,
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: Sizes.betweenPadding),
           ],
         ));
   }

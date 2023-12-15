@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:effectivelabthree/base/sizes.dart';
+import 'package:effectivelabthree/base/text_styles.dart';
+import 'package:effectivelabthree/base/theme.dart';
+import 'package:effectivelabthree/elements/icon.dart';
 
 class SubscriptionCard extends StatelessWidget {
   const SubscriptionCard({super.key});
@@ -6,36 +10,40 @@ class SubscriptionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.only(right: 8),
-        child: Container(
-            decoration: ShapeDecoration(
-              color: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              shadows: const [
-                BoxShadow(
-                  color: Color(0x114F4F6C),
-                  blurRadius: 14,
-                  offset: Offset(0, 8),
-                  spreadRadius: 0,
-                ),
-                BoxShadow(
-                  color: Color(0x14000000),
-                  blurRadius: 10,
-                  offset: Offset(0, 2),
-                  spreadRadius: 0,
-                )
-              ],
+      padding: const EdgeInsets.only(right: Sizes.padding / 2),
+      child: DecoratedBox(
+        decoration: ShapeDecoration(
+          color: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(BorderRadiuses.card),
+          ),
+          shadows: const [
+            BoxShadow(
+              color: CustomColor.shadowBlue,
+              blurRadius: 14,
+              offset: Offset(0, 8),
+              spreadRadius: 0,
             ),
-            child: Material(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () {},
-                    child: InnerCard()))));
+            BoxShadow(
+              color: CustomColor.shadowBlack,
+              blurRadius: 10,
+              offset: Offset(0, 2),
+              spreadRadius: 0,
+            ),
+          ],
+        ),
+        child: Material(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(BorderRadiuses.card),
+          ),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(BorderRadiuses.card),
+            onTap: () {},
+            child: InnerCard(),
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -47,68 +55,43 @@ class InnerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 216,
-        height: 130,
-        child: const Padding(
-            padding: EdgeInsets.all(16),
-            child: Column(
+      width: 216,
+      height: 130,
+      child: const Padding(
+        padding: EdgeInsets.all(Sizes.padding),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                CustomIcon(name: "sberprime", size: Sizes.bigIcon),
+                SizedBox(width: Sizes.betweenPadding),
+                Text(
+                  "СберПрайм",
+                  style: TextStyles.smallTitle,
+                ),
+              ],
+            ),
+            SizedBox(height: Sizes.bigPadding + Sizes.multiLinePadding),
+            Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    SizedBox(
-                      height: 36,
-                      width: 36,
-                      child: ClipRRect(
-                        child: const Image(
-                            image: AssetImage(
-                                "assets/icons/36/multicolor/sberprime.png"),
-                            fit: BoxFit.cover),
-                      ),
-                    ),
-                    SizedBox(width: 12),
-                    const Text(
-                      "СберПрайм",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontFamily: 'SF Pro Text',
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: -0.40,
-                      ),
-                    )
-                  ],
+                Text(
+                  "Платёж 9 июля",
+                  style: TextStyles.bodyBlack,
                 ),
-                SizedBox(height: 22),
-                const Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Платёж 9 июля",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 14,
-                        fontFamily: 'SF Pro Text',
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: -0.41,
-                      ),
-                    ),
-                    SizedBox(height: 1),
-                    Text(
-                      "199 ₽ в месяц",
-                      style: TextStyle(
-                        color: Color(0x7f000000),
-                        fontSize: 14,
-                        fontFamily: 'SF Pro Text',
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: -0.41,
-                      ),
-                    )
-                  ],
+                SizedBox(height: Sizes.multiLinePadding),
+                Text(
+                  "199 ₽ в месяц",
+                  style: TextStyles.bodyGrey,
                 ),
               ],
-            )));
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

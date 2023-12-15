@@ -1,5 +1,9 @@
-import 'package:effectivelabthree/elements/profile/head.dart';
+import 'package:effectivelabthree/elements/icon.dart';
 import 'package:flutter/material.dart';
+import 'package:effectivelabthree/base/text_styles.dart';
+import 'package:effectivelabthree/base/theme.dart';
+import 'package:effectivelabthree/base/sizes.dart';
+import 'package:effectivelabthree/elements/profile/head.dart';
 
 class ProfileAppBar extends StatelessWidget {
   const ProfileAppBar({super.key});
@@ -9,30 +13,37 @@ class ProfileAppBar extends StatelessWidget {
     return SliverAppBar(
       floating: true,
       pinned: true,
-      expandedHeight: 306.0,
+      expandedHeight: 306,
       backgroundColor: Colors.white,
       surfaceTintColor: Colors.white,
-      shadowColor: Color(0x08000014),
-      flexibleSpace: ProfileHead(),
-      leading: AppBar(actions: [
+      shadowColor: CustomColor.shadowBlack,
+      flexibleSpace: const ProfileHead(),
+      leading: IconButton(
+        onPressed: () {},
+        icon: const CustomIcon(
+          name: "close",
+          size: 24,
+        ),
+      ),
+      actions: [
         IconButton(
-            onPressed: () {}, icon: Icon(Icons.close), color: Color(0xff068441))
-      ]),
+          onPressed: () {},
+          icon: const CustomIcon(
+            name: "logout",
+            size: 24,
+          ),
+        ),
+      ],
       bottom: const TabBar(
         indicatorSize: TabBarIndicatorSize.tab,
-        labelColor: Color(0xff000000),
-        unselectedLabelColor: Color(0x7f000000),
-        dividerColor: Color(0x0c000000),
-        indicatorColor: Color(0xff068441),
+        labelColor: Colors.black,
+        unselectedLabelColor: CustomColor.grey,
+        dividerColor: CustomColor.dividerGrey,
+        indicatorColor: CustomColor.green,
         splashFactory: InkSparkle.splashFactory,
-        overlayColor: MaterialStatePropertyAll(Color.fromARGB(10, 0, 0, 0)),
-        dividerHeight: 2,
-        labelStyle: TextStyle(
-          fontSize: 16,
-          fontFamily: 'SF Pro Text',
-          fontWeight: FontWeight.w500,
-          letterSpacing: -0.40,
-        ),
+        overlayColor: MaterialStatePropertyAll(CustomColor.shadowBlack10),
+        dividerHeight: Sizes.dividerHeight,
+        labelStyle: TextStyles.smallTitle,
         tabs: [
           Tab(
             text: "Профиль",

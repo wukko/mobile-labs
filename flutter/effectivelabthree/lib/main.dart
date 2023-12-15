@@ -1,6 +1,7 @@
-import 'package:effectivelabthree/elements/profile/app_bar.dart';
 import 'package:flutter/material.dart';
-
+import 'package:effectivelabthree/base/text_styles.dart';
+import 'package:effectivelabthree/base/theme.dart';
+import 'package:effectivelabthree/elements/profile/app_bar.dart';
 import 'package:effectivelabthree/pages/profile/profile.dart';
 import 'package:effectivelabthree/pages/profile/settings.dart';
 
@@ -14,15 +15,13 @@ class EffectiveLabThree extends StatelessWidget {
     return MaterialApp(
       home: const ScaffoldExample(),
       theme: ThemeData(
-        fontFamily: 'SF Pro Text',
+        fontFamily: defaultFontFamily,
         visualDensity: VisualDensity.comfortable,
         primarySwatch: Colors.green,
-        primaryColor: Color(0xff068441),
-        primaryColorLight: Color(0xff068441),
-        hintColor: Color(0xff068441),
-        canvasColor: Color(0xffffffff),
-        scaffoldBackgroundColor: Color(0xffffffff),
-        cardColor: Color(0xffffffff),
+        primaryColor: CustomColor.green,
+        primaryColorLight: CustomColor.green,
+        hintColor: CustomColor.green,
+        canvasColor: Colors.white,
       ),
     );
   }
@@ -41,10 +40,10 @@ class _ScaffoldExampleState extends State<ScaffoldExample> {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        backgroundColor: Color(0xffFAFAFA),
+        backgroundColor: CustomColor.scaffoldBackground,
         body: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return <Widget>[const ProfileAppBar()];
+            return [const ProfileAppBar()];
           },
           body: const TabBarView(
             children: [ProfilePage(), SettingsPage()],

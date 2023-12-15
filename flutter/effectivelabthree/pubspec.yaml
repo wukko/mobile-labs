@@ -21,10 +21,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+     - assets/icons/24/arrow.png
+     - assets/icons/24/close.png
+     - assets/icons/24/logout.png
+     - assets/icons/36/percent_fill.png
+     - assets/icons/36/percent.png
+     - assets/icons/36/sberprime.png
+     - assets/icons/36/speedometer.png
+     - assets/icons/36/transfers.png
      - assets/placeholders/user.png
-     - assets/icons/36/multicolor/sberprime.png
-     - assets/icons/36/stroke/speedometer.png
-     - assets/icons/24/disclosure.png
 
   fonts:
      - family: SF Pro Display

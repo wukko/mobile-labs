@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:effectivelabthree/base/sizes.dart';
+import 'package:effectivelabthree/base/text_styles.dart';
 
 class ProfileHead extends StatelessWidget {
   const ProfileHead({super.key});
@@ -15,20 +17,17 @@ class ProfileHead extends StatelessWidget {
           height: 110,
           width: 110,
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(38),
+            borderRadius: BorderRadius.circular(BorderRadiuses.profilePic),
             child: const Image(
-                image: AssetImage('assets/placeholders/user.png'),
-                fit: BoxFit.cover),
+              image: AssetImage('assets/placeholders/user.png'),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
       title: const Text(
         "Екатерина",
-        style: TextStyle(
-            color: Colors.black,
-            fontSize: 24,
-            fontFamily: 'SF Pro Display',
-            fontWeight: FontWeight.w700),
+        style: TextStyles.bigTitle,
       ),
     );
   }
