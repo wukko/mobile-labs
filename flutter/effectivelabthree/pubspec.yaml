@@ -1,0 +1,39 @@
+name: effectivelabthree
+description: "Flutter lab project for Effective mobile dev course"
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+     - assets/placeholders/user.png
+     - assets/icons/36/multicolor/sberprime.png
+     - assets/icons/36/stroke/speedometer.png
+     - assets/icons/24/disclosure.png
+
+  fonts:
+     - family: SF Pro Display
+       fonts:
+         - asset: fonts/SF-Pro-Display-Bold.otf
+           weight: 700
+     - family: SF Pro Text
+       fonts:
+         - asset: fonts/SF-Pro-Text-Medium.otf
+         - asset: fonts/SF-Pro-Text-Bold.otf
+           weight: 700
+
