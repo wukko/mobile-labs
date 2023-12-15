@@ -30,6 +30,7 @@ flutter:
      - assets/icons/36/speedometer.png
      - assets/icons/36/transfers.png
      - assets/placeholders/user.png
+     - assets/placeholders/test.png
 
   fonts:
      - family: SF Pro Display

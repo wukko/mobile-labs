@@ -1,10 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:effectivelabthree/base/sizes.dart';
+import 'package:effectivelabthree/base/strings.dart';
 import 'package:effectivelabthree/elements/profile/subscription_card.dart';
 import 'package:effectivelabthree/elements/section_text.dart';
 
+class Subscription {
+  final String icon;
+  final String title;
+  final String renew;
+  final String price;
+
+  Subscription({
+    required this.icon,
+    required this.title,
+    required this.renew,
+    required this.price,
+  });
+}
+
 class ConnectedServices extends StatelessWidget {
-  const ConnectedServices({super.key});
+  final List<Subscription> subscriptions;
+  const ConnectedServices({
+    super.key,
+    required this.subscriptions,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +32,11 @@ class ConnectedServices extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SectionText(
-          header: "У вас подключено",
-          text: "Подписки, автоплатежи и сервисы на которые вы подписались",
+          header: Strings.connectedHeader,
+          text: Strings.connectedBody,
         ),
-        Container(
-          height: 160,
+        SizedBox(
+          height: Sizes.cardHeight + Sizes.bigPadding / 2 + Sizes.padding,
           child: ListView(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.fromLTRB(
@@ -26,11 +45,14 @@ class ConnectedServices extends StatelessWidget {
               Sizes.bigPadding - (Sizes.padding / 2),
               Sizes.bigPadding,
             ),
-            children: const [
-              SubscriptionCard(),
-              SubscriptionCard(),
-              SubscriptionCard()
-            ],
+            children: subscriptions.map((subscription) {
+              return SubscriptionCard(
+                icon: subscription.icon,
+                title: subscription.title,
+                renew: subscription.renew,
+                price: subscription.price,
+              );
+            }).toList(),
           ),
         ),
       ],

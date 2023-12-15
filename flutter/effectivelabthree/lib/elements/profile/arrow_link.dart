@@ -5,7 +5,16 @@ import 'package:effectivelabthree/base/theme.dart';
 import 'package:effectivelabthree/elements/icon.dart';
 
 class ArrowLink extends StatelessWidget {
-  const ArrowLink({super.key});
+  final String icon;
+  final String title;
+  final String subtitle;
+
+  const ArrowLink({
+    super.key,
+    required this.icon,
+    required this.title,
+    this.subtitle = "",
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +22,14 @@ class ArrowLink extends StatelessWidget {
       children: [
         Material(
           color: CustomColor.scaffoldBackground,
-          child: InkWell(onTap: () {}, child: const InnerLink()),
+          child: InkWell(
+            onTap: () {},
+            child: _InnerLink(
+              icon: icon,
+              title: title,
+              subtitle: subtitle,
+            ),
+          ),
         ),
         const Divider(
           height: 0,
@@ -25,38 +41,48 @@ class ArrowLink extends StatelessWidget {
   }
 }
 
-class InnerLink extends StatelessWidget {
-  const InnerLink({
-    super.key,
+class _InnerLink extends StatelessWidget {
+  final String icon;
+  final String title;
+  final String subtitle;
+
+  const _InnerLink({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
   });
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
         horizontal: Sizes.padding,
         vertical: Sizes.betweenPadding,
       ),
       child: Row(
         children: [
-          CustomIcon(name: "speedometer", size: Sizes.bigIcon),
-          SizedBox(width: Sizes.betweenPadding),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Перенос строки",
-                style: TextStyles.smallTitle,
-              ),
-              SizedBox(width: 2),
-              Text(
-                "На платежи и переводы",
-                style: TextStyles.bodyGrey,
-              ),
-            ],
+          CustomIcon(name: icon, size: Sizes.bigIcon),
+          const SizedBox(width: Sizes.betweenPadding),
+          Flexible(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  title,
+                  style: TextStyles.smallTitle,
+                ),
+                if (subtitle.isNotEmpty) ...[
+                  const SizedBox(height: Sizes.smallLinePadding),
+                  Text(
+                    subtitle,
+                    style: TextStyles.bodyGrey,
+                  ),
+                ],
+              ],
+            ),
           ),
-          Spacer(),
-          CustomIcon(name: "arrow", size: Sizes.mediumIcon)
+          const SizedBox(width: Sizes.padding),
+          const CustomIcon(name: "arrow", size: Sizes.mediumIcon)
         ],
       ),
     );

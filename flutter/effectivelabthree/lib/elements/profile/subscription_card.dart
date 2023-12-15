@@ -5,7 +5,18 @@ import 'package:effectivelabthree/base/theme.dart';
 import 'package:effectivelabthree/elements/icon.dart';
 
 class SubscriptionCard extends StatelessWidget {
-  const SubscriptionCard({super.key});
+  final String icon;
+  final String title;
+  final String renew;
+  final String price;
+
+  const SubscriptionCard({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.renew,
+    required this.price,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +50,12 @@ class SubscriptionCard extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(BorderRadiuses.card),
             onTap: () {},
-            child: InnerCard(),
+            child: _InnerCard(
+              icon: icon,
+              title: title,
+              renew: renew,
+              price: price,
+            ),
           ),
         ),
       ),
@@ -47,44 +63,52 @@ class SubscriptionCard extends StatelessWidget {
   }
 }
 
-class InnerCard extends StatelessWidget {
-  const InnerCard({
-    super.key,
+class _InnerCard extends StatelessWidget {
+  final String icon;
+  final String title;
+  final String renew;
+  final String price;
+
+  const _InnerCard({
+    required this.icon,
+    required this.title,
+    required this.renew,
+    required this.price,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 216,
-      height: 130,
-      child: const Padding(
-        padding: EdgeInsets.all(Sizes.padding),
+      width: Sizes.cardWidth,
+      height: Sizes.cardHeight,
+      child: Padding(
+        padding: const EdgeInsets.all(Sizes.padding),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
-                CustomIcon(name: "sberprime", size: Sizes.bigIcon),
-                SizedBox(width: Sizes.betweenPadding),
+                CustomIcon(name: icon, size: Sizes.bigIcon),
+                const SizedBox(width: Sizes.betweenPadding),
                 Text(
-                  "СберПрайм",
+                  title,
                   style: TextStyles.smallTitle,
                 ),
               ],
             ),
-            SizedBox(height: Sizes.bigPadding + Sizes.multiLinePadding),
+            const SizedBox(height: Sizes.bigPadding + Sizes.smallLinePadding),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Платёж 9 июля",
+                  renew,
                   style: TextStyles.bodyBlack,
                 ),
-                SizedBox(height: Sizes.multiLinePadding),
+                const SizedBox(height: Sizes.smallLinePadding),
                 Text(
-                  "199 ₽ в месяц",
+                  price,
                   style: TextStyles.bodyGrey,
                 ),
               ],

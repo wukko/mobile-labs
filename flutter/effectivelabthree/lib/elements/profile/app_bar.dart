@@ -1,8 +1,9 @@
-import 'package:effectivelabthree/elements/icon.dart';
 import 'package:flutter/material.dart';
+import 'package:effectivelabthree/base/strings.dart';
 import 'package:effectivelabthree/base/text_styles.dart';
 import 'package:effectivelabthree/base/theme.dart';
 import 'package:effectivelabthree/base/sizes.dart';
+import 'package:effectivelabthree/elements/icon.dart';
 import 'package:effectivelabthree/elements/profile/head.dart';
 
 class ProfileAppBar extends StatelessWidget {
@@ -17,12 +18,13 @@ class ProfileAppBar extends StatelessWidget {
       backgroundColor: Colors.white,
       surfaceTintColor: Colors.white,
       shadowColor: CustomColor.shadowBlack,
-      flexibleSpace: const ProfileHead(),
+      flexibleSpace:
+          const ProfileHead(placeholderAsset: "test", name: "Екатерина"),
       leading: IconButton(
         onPressed: () {},
         icon: const CustomIcon(
           name: "close",
-          size: 24,
+          size: Sizes.mediumIcon,
         ),
       ),
       actions: [
@@ -30,7 +32,7 @@ class ProfileAppBar extends StatelessWidget {
           onPressed: () {},
           icon: const CustomIcon(
             name: "logout",
-            size: 24,
+            size: Sizes.mediumIcon,
           ),
         ),
       ],
@@ -46,10 +48,10 @@ class ProfileAppBar extends StatelessWidget {
         labelStyle: TextStyles.smallTitle,
         tabs: [
           Tab(
-            text: "Профиль",
+            text: Strings.profile,
           ),
           Tab(
-            text: "Настройки",
+            text: Strings.settings,
           )
         ],
       ),
