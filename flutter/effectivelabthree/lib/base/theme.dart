@@ -1,3 +1,4 @@
+import 'package:effectivelabthree/base/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomColor {
@@ -10,3 +11,13 @@ class CustomColor {
       shadowBlue = Color(0x114F4F6C),
       shadowProfile = Color(0x7A1D1D25);
 }
+
+ThemeData customTheme = ThemeData(
+  fontFamily: defaultFontFamily,
+  visualDensity: VisualDensity.comfortable,
+  primarySwatch: Colors.green,
+  primaryColor: CustomColor.green,
+  primaryColorLight: CustomColor.green,
+  hintColor: CustomColor.green,
+  canvasColor: Colors.white,
+);

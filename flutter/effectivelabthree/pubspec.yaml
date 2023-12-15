@@ -31,6 +31,7 @@ flutter:
      - assets/icons/36/transfers.png
      - assets/placeholders/user.png
      - assets/placeholders/test.png
+     - assets/placeholders/fakedata.json
 
   fonts:
      - family: SF Pro Display
