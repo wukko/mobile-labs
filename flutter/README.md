@@ -19,7 +19,8 @@ Sberbank profile screen built with Flutter.
   App navigation on iOS:  
   
 
-  [REPLACE ME]
+
+https://github.com/wukko/mobile-labs/assets/71202418/7675372f-b436-4d74-9622-7ae8f1584eda
 </details><br>  
 
 ## What's in this directory?
