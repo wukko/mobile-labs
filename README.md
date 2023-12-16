@@ -10,5 +10,5 @@ Monorepo for all projects developed during mobile dev course by Effective.
 ### Download/Preview
 - [Android](/downloads/EffectiveLabOne.apk)
 - [iOS](/ios/README.md) (video)
-- Flutter
+- [Flutter](/flutter/README.md) (video)
 - Web
